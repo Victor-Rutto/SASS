@@ -1,0 +1,27 @@
+// @mixin mybuttons($background-color, $color, $height, $width, $padding){
+//     background-color: $background-color;
+//     color:  $color;
+//     height:$height;
+//     width: $width;
+//     padding: $padding;
+// }
+
+// .button1{ 
+//     @include mybuttons(red, white, 75px, 75px, 4px);
+//      }
+
+@mixin mybuttons($background-color, $color, $height, $width, $padding){
+background-color: $background-color;
+color:  $color;
+height: $height;
+width: $width;
+padding: $padding;
+}
+
+.button1{ 
+@include mybuttons(red, white, 75px, 75px, 4px);
+
+background-color: red;
+color: white;
+}
+    
